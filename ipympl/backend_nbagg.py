@@ -148,7 +148,7 @@ class Toolbar(DOMWidget, NavigationToolbar2WebAgg):
 
     def __init__(self, canvas, *args, **kwargs):
         DOMWidget.__init__(self, *args, **kwargs)
-        NavigationToolbar2WebAgg.__init__(self, canvas, *args, **kwargs)
+        NavigationToolbar2WebAgg.__init__(self, canvas)
 
         self.on_msg(self.canvas._handle_message)
 
